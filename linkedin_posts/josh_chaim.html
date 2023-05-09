@@ -34,13 +34,13 @@
 	 background-color: #192e4d;
 }
 /* Custom Styles */
- .layout {
-	 display: flex;
-	 flex-direction: row;
-	 align-items: center;
-	 justify-content: center;
-	 margin-top: 3%;
-}
+<!-- .layout {-->
+<!--	 display: flex;-->
+<!--	 flex-direction: row;-->
+<!--	 align-items: center;-->
+<!--	 justify-content: center;-->
+<!--	 margin-top: 3%;-->
+<!--}-->
  aside {
 	 color: #fff;
 	 width: 20%;
@@ -178,23 +178,23 @@
 	 outline: none;
 	 line-height: 1rem;
 }
-nav {
-        display: flex;
-        justify-content: space-around;
-        background-color: #333;
-        padding: 1rem 0;
-    }
+<!--nav {-->
+<!--        display: flex;-->
+<!--        justify-content: space-around;-->
+<!--        background-color: #333;-->
+<!--        padding: 1rem 0;-->
+<!--    }-->
 
-    nav a {
+<!--    nav a {-->
 
-        color: white;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-    }
+<!--        color: white;-->
+<!--        text-decoration: none;-->
+<!--        padding: 0.5rem 1rem;-->
+<!--    }-->
 
-    nav a:hover {
-        background-color: #4CAF50;
-    }
+<!--    nav a:hover {-->
+<!--        background-color: #4CAF50;-->
+<!--    }-->
 
 
 </style>
@@ -213,5 +213,86 @@ nav {
 </head>
 <body>
 <div id="navbar-container"></div>
+<article class="post">
+    <div class="info">
+        <a href="#" class="user"> Kevin Cohen </a>
+        <span class="text"> commented on this</span>
+    </div>
+    <!-- Post Header -->
+    <header class="post-header">
+        <figure class="avatar-wrapper">
+            <img src="../img/josh_chaim.png" class="avatar" alt="Post avatar"/>
+        </figure>
+        <div class="content">
+            <h3> Josh Chaim </h3>
+            <p class="title">Chief Revenue Officer @ medcase - Building partnerships in digital health for the future healthcare economy</p>
+            <span class="updated"> 12 minutes ago</span>
+        </div>
+    </header>
+
+    <!-- Post Content Section -->
+    <section class="post-content">
+        <p class="content">
+🚀 Personal Growth Story: From Intern to Manager 🚀
+<br><br>A few years ago, I started my journey as an intern in the tech industry. I was eager to learn, contribute, and make a difference. Fast forward to today, and I'm now leading a team of talented individuals as a manager!
+<br><br>🔑 Key takeaways from my journey:
+<br><br>1️⃣ Never stop learning: The tech industry is constantly evolving, so it's crucial to stay up-to-date with the latest trends and developments.
+<br><br>2️⃣ Embrace challenges: Face obstacles head-on and use them as opportunities for growth and improvement.
+<br><br>3️⃣ Build strong relationships: Networking and collaborating with others can open doors and lead to new opportunities.
+<br><br>4️⃣ Be adaptable: Flexibility and the ability to pivot quickly are essential skills in today's fast-paced world.
+<br><br>5️⃣ Believe in yourself: Trust your abilities and have the confidence to take risks and make bold decisions.
+<br><br>Now, I want to hear from you! 🗣️ What are your top tips for personal growth and career advancement in the tech industry?
+<br><br>P.S. If you're looking to join a company that values personal growth and fosters a supportive environment, we at Tydex are always on the lookout for passionate individuals to join our team. Feel free to reach out!
+<br><br>#personaldevelopment #careeradvice #techindustry #Tydex
+        </p>
+
+        <div class="stats">
+            <span clas="likes"> 100 Likes </span>
+            <span class="comments"> . 10 Comments</span>
+        </div>
+        <div class="post-controls">
+            <button class="btn btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</button>
+            <button class="btn btn-comment"><i class="fa fa-comment" aria-hidden="true"></i> Comment</button>
+            <button class="btn btn-share"><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+        </div>
+    </section>
+
+    <!-- Post Comments Section -->
+    <section class="post-comment-feed">
+        <div class="comment">
+            <figure class="avatar-wrapper">
+                <img src="../img/kevin_cohen.png" class="avatar" alt="Post avatar"/>
+            </figure>
+            <div class="content">
+                <span class="user"> Kevin Cohen </span>
+                <span class="text"> Wow. This is a great story! </span>
+                <h5 class="updated"> 6 mins ago </h5>
+            </div>
+        </div>
+
+        <div class="comment">
+            <figure class="avatar-wrapper">
+                <img src="../img/kevin_cohen.png" class="avatar" alt="Post avatar"/>
+            </figure>
+            <div class="content">
+                <span class="user"> Kevin Cohen </span>
+                <span class="text"> Can we schedule a meeting ? </span>
+                <h5 class="updated"> 5 mins ago </h5>
+            </div>
+        </div>
+
+        <div class="add-comment">
+            <figure class="avatar-wrapper">
+                <img src="../img/kevin_cohen.png" class="avatar" alt="Post avatar"/>
+            </figure>
+            <div class="textfield">
+                <input type="text" name="comment" placeholder="Add a comment"/>
+                <button class="btn btn-camera"><i class="fa fa-camera-retro" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </section>
+
+</article>
+</div>
 </body>
 </html>
